@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { fetchCurrencies, saveExpense } from '../redux/actions/index';
-import '../styles/WalletFormStyle.css';
 
 class WalletForm extends Component {
   constructor() {
