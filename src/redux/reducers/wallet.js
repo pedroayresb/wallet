@@ -17,11 +17,6 @@ const wallet = (state = INITIAL_STATE, action) => {
       ...state,
       currencies: action.currencies,
     };
-  case GET_CURRENCIES_ERROR:
-    return {
-      ...state,
-      error: action.error,
-    };
   case SAVE_EXPENSE:
     return { ...state,
       expenses: [...state.expenses, {

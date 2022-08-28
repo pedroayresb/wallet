@@ -15,8 +15,8 @@ class Expense extends Component {
       exchangeRates,
       dispatch } = this.props;
     return (
-      <tr className="expense">
-        <td>
+      <tr className="expense" data-testid="expense-table">
+        <td data-testid="expense-description">
           { description }
         </td>
         <td>
