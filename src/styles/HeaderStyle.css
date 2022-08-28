@@ -1,10 +1,10 @@
 .header-container {
+  background-color: white;
+  height: 60px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
-  height: 60px;
-  background-color: #fff;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
 }

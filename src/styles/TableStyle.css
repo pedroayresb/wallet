@@ -1,8 +1,8 @@
 .expense-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
   border: 1px solid #ddd;
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
   display: flex;
   justify-content: space-evenly;
 }
@@ -10,8 +10,8 @@
 .expense {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  justify-content: space-evenly;
   height: 100%;
+  width: 100%;
 }
