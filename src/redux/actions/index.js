@@ -3,6 +3,7 @@ export const GET_CURRENCIES_SUCCESS = 'GET_CURRENCIES_SUCCESS';
 export const GET_CURRENCIES_ERROR = 'GET_CURRENCIES_ERROR';
 export const SAVE_EXPENSE = 'SAVE_EXPENSE';
 export const DELETE_EXPENSE = 'DELETE_EXPENSE';
+export const EDIT_EXPENSE = 'EDIT_EXPENSE';
 
 export const userLogin = (email) => ({
   type: USER_LOGIN,
@@ -26,6 +27,11 @@ export const saveExpense = (expense) => ({
 
 export const deleteExpense = (expense) => ({
   type: DELETE_EXPENSE,
+  expense,
+});
+
+export const editExpense = (expense) => ({
+  type: EDIT_EXPENSE,
   expense,
 });
 

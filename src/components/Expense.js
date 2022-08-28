@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { deleteExpense } from '../redux/actions';
 
 class Expense extends Component {
@@ -49,6 +50,14 @@ class Expense extends Component {
           >
             Excluir
           </button>
+          <Link to={ `/edit/${id}` }>
+            <button
+              type="button"
+              data-testid="edit-btn"
+            >
+              Editar
+            </button>
+          </Link>
         </td>
       </tr>
     );
@@ -57,7 +66,7 @@ class Expense extends Component {
 
 Expense.propTypes = {
   dispatch: PropTypes.func.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,

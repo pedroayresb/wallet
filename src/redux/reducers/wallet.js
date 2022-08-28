@@ -1,7 +1,8 @@
 import { GET_CURRENCIES_SUCCESS,
   GET_CURRENCIES_ERROR,
   SAVE_EXPENSE,
-  DELETE_EXPENSE } from '../actions/index';
+  DELETE_EXPENSE,
+  EDIT_EXPENSE } from '../actions/index';
 
 const INITIAL_STATE = {
   currencies: [],
@@ -34,6 +35,9 @@ const wallet = (state = INITIAL_STATE, action) => {
   case DELETE_EXPENSE:
     return { ...state,
       expenses: state.expenses.filter((expense) => expense.id !== action.expense) };
+  case EDIT_EXPENSE:
+    return { ...state,
+      expenses: action.expense };
   default:
     return state;
   }
