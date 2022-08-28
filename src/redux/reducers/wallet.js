@@ -1,5 +1,4 @@
 import { GET_CURRENCIES_SUCCESS,
-  GET_CURRENCIES_ERROR,
   SAVE_EXPENSE,
   DELETE_EXPENSE,
   EDIT_EXPENSE } from '../actions/index';
