@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Expense from './Expense';
-import '../styles/TableStyle.css';
 
 class Table extends Component {
   render() {
