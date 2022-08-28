@@ -84,7 +84,7 @@ class WalletForm extends Component {
           onChange={ this.onInputChange }
         >
           {currencies.map((currency) => (
-            <option key={ currency } value={ currency }>
+            <option data-testid="currencies" key={ currency } value={ currency }>
               { currency }
             </option>
           ))}
@@ -103,6 +103,7 @@ class WalletForm extends Component {
         </select>
         <button
           type="reset"
+          data-testid="add-currency-btn"
           disabled={ isDisabled }
           onClick={ this.onSubmit }
         >

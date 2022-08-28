@@ -53,6 +53,7 @@ class LoginComponent extends Component {
           <button
             type="button"
             disabled={ isDisabled }
+            data-testid="login-submit-btn"
             onClick={ () => {
               dispatch(userLogin(email));
               onSubmit();
